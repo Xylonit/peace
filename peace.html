@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perbesare la Pace - Non c'è guerra</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #b5e2b7; /* 淡绿色 */
+            color: #000000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        footer {
+            font-size: 14px;
+            color: #555;
+            margin-top: 20px;
+        }
+        .light {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url('light-candle.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 10px 5px;
+        }
+        .fade-enter-active, .fade-leave-active {
+            transition: opacity 0.5s;
+        }
+        .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Perbesare la Pace - Non c'è guerra
+    </header>
+    <div class="container">
+        <h1>Pace nel Mondo</h1>
+        <p>Pragniamo di vivere in un mondo senza guerre.</p>
+        <p>Nel mondo moderno, la paure e l'instabilità si mescolano in modo insidioso, alimentando la speranza per una convivenza pacifica.</p>
+        <p>Cosa possiamo fare per far sì che questa pace diventi realtà? Ciascuno di noi può fare la differenza attraverso l'educazione, l'altruismo e l'attenzione ai problemi umani.</p>
+        <p>Simboli come la torcia possono rappresentare il desiderio di luce in un mondo di ombre. Il segnale per un futuro migliore.</p>
+        <div>
+            <p class="light"></p>
+            <p class="light"></p>
+            <p class="light"></p>
+            <p class="light"></p>
+        </div>
+    </div>
+    <div class="container fade-enter-active" data-v-12345678>
+        <h1>.LENGTH Peace</h1>
+        <p>Pragniamo di vivere in un mondo privo di guerre.</p>
+        <p>Le paure e le instabilità del mondo moderno fanno emergere la speranza per una convivenza più pacifica.</p>
+        <p>Ciascuno di noi può fare la differenza attraverso l'educazione, l'altruismo e l'individuo che è la chiave per un futuro migliore.</p>
+        <p>Simboli come la torcia rappresentano la luce che illumina il cammino verso un'umanità più pacifica.</p>
+        <div>
+            <p class="light"></p>
+            <p class="light"></p>
+            <p class="light"></p>
+            <p class="light"></p>
+        </div>
+    </div>
+    <div class="container fade-enter-active" data-v-12345678>
+        <h1>Peace for a Better Tomorrow</h1>
+        <p>Desideriamo viver in un mondo senza guerra.</p>
+        <p>La paura e l'instabilità alimentano la speranza per una convivenza pacifica.</p>
+        <p>Ciascuno di noi può contribuire attraverso l'educazione, l'altruismo e l'attenzione alle sfide umane.</p>
+        <p>Simboli come la torcia rappresentano la speranza per un futuro migliore.</p>
+        <div>
+            <p class="light"></p>
+            <p class="light"></p>
+            <p class="light"></p>
+            <p class="light"></p>
+        </div>
+    </div>
+    <footer>
+        Al menghi di pace per tutti!
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const containers = document.querySelectorAll('.fade-enter-active');
+            containers.forEach(container => {
+                container.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>
